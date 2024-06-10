@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:background="#eeeeee"
+        android:layout_width="380dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="제품 이름 : "/>
+
+        <TextView
+            android:id="@+id/itemRegister_item_name"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/itemRegister_item_img"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/choco" />
+
+    <LinearLayout
+        android:background="#FAFAD2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#F9F5EB"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="가격 : "/>
+
+        <TextView
+            android:id="@+id/itemRegister_price"
+            android:layout_gravity="center"
+            android:layout_width="210dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F9F5EB"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="종류 : "
+            android:textColor="#000000"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/itemRegister_item_type"
+            android:layout_gravity="center"
+            android:layout_width="210dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/itemRegister_register_btn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:backgroundTint="#394867"
+        android:textColor="#ffffff"
+        android:text="등록하기"
+        android:textSize="20dp" />
+</LinearLayout>

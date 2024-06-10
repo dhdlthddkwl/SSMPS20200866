@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".location.MainPage">
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:background="#eeeeee"
+        android:layout_width="380dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/edit_store_layout_name"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/edit_store_layout_explain"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/mainPage_location_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="이름"-->
+<!--            android:visibility="gone"/>-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/mainPage_name_input"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="이름을 입력하세요"-->
+<!--            android:visibility="gone"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/mainPage_name_add_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="확인"-->
+<!--            android:visibility="gone"/>-->
+
+<!--    </LinearLayout>-->
+
+    <ImageView
+        android:id="@+id/mainPage_draw_space"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/mainPage_add_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#394867"
+            android:text="매대 추가" />
+
+    <Button
+        android:id="@+id/mainPage_remove_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#394867"
+        android:text="매대 삭제"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/mainPage_regist_item_btn"
+            android:layout_width="156dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#394867"
+            android:text="상품 진열"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <Button
+            android:id="@+id/mainPage_save_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#394867"
+            android:text="저장하기" />
+    </LinearLayout>
+</LinearLayout>

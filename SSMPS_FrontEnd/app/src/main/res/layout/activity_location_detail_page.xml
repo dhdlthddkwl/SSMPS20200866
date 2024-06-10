@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/location_detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:text="(타입)"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp">
+
+            <TableLayout
+                android:id="@+id/location_detail_table"
+                android:background="@drawable/table_border"
+                android:layout_marginVertical="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:showDividers="middle"
+                android:divider="@drawable/table_divider">
+                <TableRow
+                    android:id="@+id/location_detail_row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/table_divider">
+                    <TextView
+                        android:id="@+id/detail_add_r2_c1"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                    <TextView
+                        android:id="@+id/detail_add_r2_c2"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                    <TextView
+                        android:id="@+id/detail_add_r2_c3"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/location_detail_row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:showDividers="middle"
+                    android:divider="@drawable/table_divider">
+                    <TextView
+                        android:id="@+id/detail_add_r1_c1"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                    <TextView
+                        android:id="@+id/detail_add_r1_c2"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                    <TextView
+                        android:id="@+id/detail_add_r1_c3"
+                        android:onClick="addItem"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="50sp"
+                        android:text="+"/>
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+        <Button
+            android:id="@+id/location_detail_add_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="행 추가"/>
+        <Button
+            android:id="@+id/location_detail_add_col"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="열 추가"/>
+
+    </LinearLayout>
+</ScrollView>
